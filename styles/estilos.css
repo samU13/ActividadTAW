@@ -1,0 +1,189 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #767676;
+    font-size: 1vw;
+}
+
+/*CABEZERA*/
+header{
+    background: radial-gradient(#00cccc, #009999);
+    overflow: hidden;
+    width: auto;
+
+}
+
+.logo{
+    margin-left: 2%;
+    padding-bottom: 0%;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: 7px;
+}
+
+.barra{
+    width: 100%;
+    height: 1.5vh;
+    background-color: #00838e;
+    text-align: center;
+
+}
+
+/*LOGIN*/
+
+.formulario{
+    float: right;
+      display: inline;
+      width: 30%;
+      padding-top: 8px;
+  }
+  .inputAbajo{
+      margin-top: 2%;
+  }
+
+/*FOOTER*/
+
+.barra p{
+    color: white;
+    padding: 0.5%;
+margin: 0%;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .barra{
+    height: 2em;
+}
+footer a{
+    color: blue;
+}
+
+/*CONTENIDO PRINCIPAL*/
+
+main{
+    margin: 1%;
+}
+
+/*BARRA NAVEGACION*/
+
+#nav{
+  float: left;
+    width: 20%;
+}
+#nav a{
+    text-decoration: none;
+}
+#nav ul{
+    list-style: none;
+    background-color: #D9F5F2;
+    font-weight: bold;
+    color: #666;
+    text-align: left;
+    line-height: 2;
+    padding-inline-start: 0px; 
+}
+#nav ul li{
+    text-align: left;
+}
+#nav > ul > li > ul {
+    display: none;
+    background-color: white;
+    font-weight: normal;
+    z-index: 1;
+
+}
+
+#nav > ul > li > ul a{
+    color: #00838E;
+}
+#nav > ul > li:hover > ul {
+    display: block;
+}
+#nav > ul > li:hover > ul > li {
+    transition: all 300ms;
+}
+
+/*BLOQUE INFORMACION*/
+
+#noticias{
+    width: 58%;
+    height: auto;
+    float: left;
+    text-align: justify;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#noticias > *{
+    font-size: 1.1em;
+    line-height: 1.4;
+}
+
+.titulo{
+    line-height: 1.2;
+    color: #00838E;
+    border-bottom: solid 1px #00838E;
+}
+h1{
+    font-style: italic;
+}
+h2{
+    font-size: 1.4em;
+}
+
+/*CONTENIDO LATERAL*/
+aside{
+    width: 20%;
+    height: auto;
+    float: right;
+}
+aside p::after{
+    content: "ampliar";
+    color: #00838E;
+    text-decoration: underline;
+}
+
+
+aside h1{
+    line-height: 1.4 !important;
+}
+
+aside > h2{
+    background-color: #D9F5F2;
+    line-height: 2;
+}
+
+/*RESPONSIVE*/
+
+
+@media (max-width: 920px){
+    *{
+        font-size: 1.5vw;
+    }
+    .destacados{
+        display: none;
+    }
+    .formulario{
+        display: none;
+    }
+    #nav{
+        float: none;
+        width: auto;
+    }
+    #noticias{
+        float: none;
+        width: auto;
+    }
+
+} 
+
+@media (max-width: 480px){
+    *{
+        font-size: 2vw;
+    }
+  
+
+} 
+
