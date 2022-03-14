@@ -139,6 +139,12 @@ aside{
     height: auto;
     float: right;
 }
+aside p:first-of-type::after{
+        content: "ampliar→";
+        color: #00838E;
+        text-decoration: underline;
+    
+}
 aside p::after{
     content: "ampliar";
     color: #00838E;
